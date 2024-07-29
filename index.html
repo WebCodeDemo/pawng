@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAWNG</title>
+    <style>
+        body {
+            background: lime url('https://i.gifer.com/76YS.gif') repeat;
+            font-family: "Comic Sans MS", cursive;
+            text-align: center;
+        }
+        h1 {
+            color: yellow;
+            text-shadow: 2px 2px 0 blue, 4px 4px 0 red;
+            font-size: 72px;
+            animation: blink 0.5s linear infinite;
+        }
+        button {
+            font-size: 24px;
+            padding: 20px;
+            margin: 20px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            border: 5px solid fuchsia;
+            border-radius: 50px;
+            cursor: pointer;
+            animation: spin 3s linear infinite;
+        }
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>PAWNG</h1>
+    <button onclick="alert('health of the other player drained!')">stab them into the edge of the screen</button>
+    <button onclick="alert('health restored')">score a piont</button>
+</body>
+</html>
